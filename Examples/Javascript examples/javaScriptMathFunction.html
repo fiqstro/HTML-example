@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+        function mathProblem(n1, n2) {
+let res = n1 + n2 // Making a problem function. Usage: mathProblem(number, number)
+return res;
+        }
+
+        function changeParagraph() {
+document.getElementById('changedpar').innerHTML = `${mathProblem(2, 8)}` // The text will change to 10, as expected.
+        }
+
+        </script>
+    </head>
+    <body>
+<h1>Below is a math problem.</h1>
+<p id="changedpar">What's 2 + 8?</p>
+
+<button type="button" onclick='changeParagraph()'>View answer</button>
+    </body>
+</html>
